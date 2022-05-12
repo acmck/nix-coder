@@ -1,5 +1,7 @@
 # nix-coder
 
+[![Open in Coder](https://my.ide.1e100.one/static/image/embed-button.svg)](https://my.ide.1e100.one/wac/build?template_oauth_service=github&template_url=https://github.com/acmck/nix-coder&template_ref=main&template_filepath=.coder/coder.yaml)
+
 The purpose of this repo is to build a "bare" linux container, for use with
 Coder. The image should be built using nix.
 
