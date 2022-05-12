@@ -6,18 +6,6 @@ workspace:
     dev-urls:
         policy: write
     specs:
-        aws-ec2-docker:
-            container-image:
-                policy: write
-            disk-size:
-                policy: write
-            instance-type:
-                policy: write
-        docker:
-            container-based-vm:
-                policy: write
-            image:
-                policy: write
         kubernetes:
             annotations:
                 policy: read
