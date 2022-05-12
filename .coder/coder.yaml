@@ -17,3 +17,15 @@ workspace:
         value: 10
       gpu-count:
         value: 0
+  configure:
+    start:
+      value:
+        - name: "Create organization directory"
+          command: "mkdir -p /home/coder/src"
+        - name: "Add GitHub to known hosts"
+          command:
+            "sudo ssh-keyscan -H github.com >> /home/coder/.ssh/known_hosts"
+        - name: "Clone Git Project"
+          command: "git clone https://github.com/acmck/nix-coder"
+          continue-on-error: true
+          directory: /home/coder/src/nix-coder
