@@ -6,7 +6,7 @@ workspace:
   specs:
     kubernetes:
       image:
-        value: index.docker.io/acmck/nix:0.0.1
+        value: index.docker.io/acmck/coder-arch:0.0.1
       container-based-vm:
         value: true
       cpu:
