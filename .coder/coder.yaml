@@ -1,39 +1,19 @@
-version: "0.2"
+version: 0.2
 workspace:
-    configure:
-        start:
-            policy: write
-    dev-urls:
-        policy: write
-    specs:
-        kubernetes:
-            annotations:
-                policy: read
-            container-based-vm:
-                policy: write
-            cpu:
-                policy: write
-            disk:
-                policy: write
-            env:
-                policy: write
-            gpu-count:
-                policy: write
-            image:
-                policy: write
-            labels:
-                policy: read
-            memory:
-                policy: write
-            node-selector:
-                policy: read
-            privileged:
-                policy: read
-            resource-limits:
-                policy: read
-            resource-requests:
-                policy: read
-            runtime-class-name:
-                policy: read
-            tolerations:
-                policy: read
+  # Type indicates the provider type to use when building the workspace.
+  # It corresponds to the `kubernetes` section under `specs`.
+  type: kubernetes
+  specs:
+    kubernetes:
+      image:
+        value: index.docker.io/acmck/nix:0.0.1
+      container-based-vm:
+        value: true
+      cpu:
+        value: 4
+      memory:
+        value: 4
+      disk:
+        value: 10
+      gpu-count:
+        value: 0
