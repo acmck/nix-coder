@@ -28,4 +28,4 @@ workspace:
         - name: "Clone Git Project"
           command: "git clone https://github.com/acmck/nix-coder"
           continue-on-error: true
-          directory: /home/coder/src/nix-coder
+          directory: /home/coder/src
