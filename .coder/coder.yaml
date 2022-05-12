@@ -1,0 +1,51 @@
+version: "0.2"
+workspace:
+    configure:
+        start:
+            policy: write
+    dev-urls:
+        policy: write
+    specs:
+        aws-ec2-docker:
+            container-image:
+                policy: write
+            disk-size:
+                policy: write
+            instance-type:
+                policy: write
+        docker:
+            container-based-vm:
+                policy: write
+            image:
+                policy: write
+        kubernetes:
+            annotations:
+                policy: read
+            container-based-vm:
+                policy: write
+            cpu:
+                policy: write
+            disk:
+                policy: write
+            env:
+                policy: write
+            gpu-count:
+                policy: write
+            image:
+                policy: write
+            labels:
+                policy: read
+            memory:
+                policy: write
+            node-selector:
+                policy: read
+            privileged:
+                policy: read
+            resource-limits:
+                policy: read
+            resource-requests:
+                policy: read
+            runtime-class-name:
+                policy: read
+            tolerations:
+                policy: read
