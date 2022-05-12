@@ -8,7 +8,7 @@ workspace:
       image:
         value: index.docker.io/acmck/coder-arch:0.0.1
       container-based-vm:
-        value: true
+        value: false
       cpu:
         value: 4
       memory:
