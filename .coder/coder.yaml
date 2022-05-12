@@ -14,7 +14,7 @@ workspace:
       memory:
         value: 4
       disk:
-        value: 10
+        value: 50
       gpu-count:
         value: 0
   configure:
