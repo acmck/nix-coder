@@ -71,7 +71,7 @@ The step appears to fail on using a `tini` runtime, found at `/var/tmp/coder/ini
 
 ## TODO
 
- [x] Build layer images 
- [ ] Make it work with coder 
- [ ] Pipeline 
- [ ] Copy the `configure` file to image (this is ran at runtime by coder)
+ - [x] Build layer images 
+ - [ ] Make it work with coder 
+ - [ ] Pipeline 
+ - [ ] Copy the `configure` file to image (this is ran at runtime by coder)
